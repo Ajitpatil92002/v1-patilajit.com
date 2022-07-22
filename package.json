@@ -1,0 +1,15 @@
+{
+  "name": "ajit-rajesh-patil-protoflio",
+  "version": "1.0.0",
+  "description": "My Protoflio",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./css/input.css -o ./css/style.css",
+    "rebuild": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+  },
+  "author": "Ajit Rajesh Patil",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}

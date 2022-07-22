@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0a192f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #495670;
+    border: 3px solid #0a192f;
+    border-radius: 10px;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/Animated\ Shape.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+.hero>div,
+nav>div {
+    position: relative;
+}
+
+#about {
+    width: 100%;
+    margin: auto;
+}
+
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    background-color: rgba(10, 25, 47, 0.85);
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+    backdrop-filter: blur(5px);
+    max-width: 100%;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
