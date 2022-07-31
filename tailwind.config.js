@@ -15,6 +15,7 @@ module.exports = {
         "light-navy": "#112240",
         green: "#64ffda",
         "green-tint": "rgba(100,255,218,0.1)",
+        "lightest-navy": "#233554",
       },
       textColor: {
         textlightWhite: "#ccd6f6;",
