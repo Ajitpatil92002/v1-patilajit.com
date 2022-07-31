@@ -649,16 +649,16 @@ video {
   margin-right: 2.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mt-16 {
